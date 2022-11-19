@@ -1,7 +1,10 @@
+import 'package:compartilhando_gurda/controls/user_control.dart';
 import 'package:compartilhando_gurda/screens/home_screens.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 void main() {
+  Get.put(UserControls());
   runApp(const MyApp());
 }
 
