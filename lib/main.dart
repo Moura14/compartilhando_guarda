@@ -1,5 +1,6 @@
 import 'package:compartilhando_gurda/controls/user_control.dart';
-import 'package:compartilhando_gurda/screens/home_screens.dart';
+import 'package:compartilhando_gurda/pages_guarda/app_pages.dart';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -14,12 +15,14 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        title: 'Compartilhando a guarda',
-        debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
-        home: HomeScreens());
+    return GetMaterialApp(
+      title: 'Compartilhando a guarda',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      initialRoute: PagesRoute.signIn,
+      getPages: AppPages.pages,
+    );
   }
 }
