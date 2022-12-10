@@ -1,4 +1,5 @@
 import 'package:compartilhando_gurda/pages_guarda/app_pages.dart';
+import 'package:compartilhando_gurda/services/validators.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:compartilhando_gurda/controls/user_control.dart';
@@ -25,7 +26,6 @@ class _SignInState extends State<SignIn> {
         alignment: Alignment.center,
         child: SingleChildScrollView(
           child: Card(
-            elevation: 8,
             shape:
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
             child: SizedBox(
@@ -64,15 +64,7 @@ class _SignInState extends State<SignIn> {
                               height: 20,
                             ),
                             TextFormField(
-                              validator: (password) {
-                                if (password == null || password.isEmpty) {
-                                  return "Digite uma senha";
-                                }
-                                if (password.length < 7) {
-                                  return "Digite uma senha com pelo menos 7 caracteres";
-                                }
-                                return null;
-                              },
+                              validator: passwordValidator,
                               controller: passwordController,
                               obscureText: isObscure == false ? true : false,
                               decoration: InputDecoration(

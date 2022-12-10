@@ -7,7 +7,7 @@ import 'package:get/get.dart';
 abstract class AppPages {
   static final pages = <GetPage>[
     GetPage(name: PagesRoute.signIn, page: (() => SignIn())),
-    GetPage(name: PagesRoute.signUp, page: (() => const SignUpScreens())),
+    GetPage(name: PagesRoute.signUp, page: (() => SignUpScreens())),
     GetPage(name: PagesRoute.home, page: (() => const HomeScreens()))
   ];
 }
