@@ -1,16 +1,7 @@
-# compartilhando_gurda
+Compartilhando Guarda - (projeto em andamento)
 
-A new Flutter project.
+- O app compartilhando guarda é um aplicativo para pais separados que possuem filhos
+- A idéia principal do app é auxiliar os pais sobre os compromissos com os filhos
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![WhatsApp Image 2022-11-01 at 00 08 03](https://user-images.githubusercontent.com/87152738/217323633-808ab77e-24e6-41c0-9a90-b9e35f8afbee.jpeg)
